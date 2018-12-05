@@ -53,6 +53,12 @@ Your auth factors are:
   computer is compromised, someone could still use a keylogger or other tool to
   capture the seed mnemonic. Only use this tool if you trust the computer you
   are using.
+- The BIP-0039 mnemonic includes a checksum. After encrypting the words, the
+  checksum will break. The encrypted seed words are unlikely to be valid.
+  This may be a problem since it partially breaks the plausible deniability of
+  storing the encrypted seed words (as the encrypted mnemonic is not actually
+  a valid phrase). In later versions of this tool, it might be possible to
+  account for this problem and generate a fully compliant encrypted phrase.
 
 ### Other Solutions
 
