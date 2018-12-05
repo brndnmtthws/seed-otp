@@ -5,6 +5,10 @@
 `seed-otp` is a Python-based one-time pad CLI tool for storing your Bitcoin seed
 mnemonic words securely using multi-factor auth.
 
+<p align="center">
+![Demo](/demo.svg)
+</p>
+
 ## Background
 
 ### The Problem
