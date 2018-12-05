@@ -143,7 +143,8 @@ $ seed-otp encrypt AAwCnwGIAe0EWABWAI4AkAMjAFQBLgZjB1T1PJtz abandon ability able
     "cheap",
     "soap",
     "typical"
-  ]
+  ],
+  "success": true
 }
 ```
 
@@ -167,7 +168,8 @@ $ seed-otp decrypt AAwCnwGIAe0EWABWAI4AkAMjAFQBLgZjB1T1PJtz fault couple digital
     "abuse",
     "access",
     "accident"
-  ]
+  ],
+  "success": true
 }
 ```
 
