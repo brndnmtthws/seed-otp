@@ -23,15 +23,18 @@ need to restore the wallet using the seed phrase.
 
 ### This Solution
 
-Use a [one-time pad](https://en.wikipedia.org/wiki/One-time_pad) with
+Combine a [one-time pad](https://en.wikipedia.org/wiki/One-time_pad) with
 [multi-factor
 authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication).
 
-By combining mult-factor auth (something you know plus something you have)
+By using mult-factor auth (something you know plus something you have)
 and one-time pad encryption, you have a simple yet extremely hard to crack
-solution. Your OTP key and seed mnemonic are stored separately, making it
-onerous to obtain both. If someone _does_ obtain either your mnemonic or OTP
-key, you would have time to move your funds to a new wallet with a brand new seed and OTP key.
+solution. With your OTP key and seed mnemonic stored separately, it becomes
+onerous to obtain both. Even if someone _does_ obtain either your mnemonic or
+OTP key, you would have time to move your coins to a new wallet with a brand
+new seed before anything happens to your coins. A one-time pad is considered
+perfect secrecy: it's nearly impossible to brute force attack so long as the
+key remains secret.
 
 Your auth factors are:
 
