@@ -105,6 +105,8 @@ Before using this tool, you should have a few things:
       computer). If you want to be extra safe, consider using a [privacy OS such as
       Tails](https://tails.boum.org/)
 
+After using the tool, make sure you **test the seed restore process**!
+
 ### Install from PyPI
 
 ```ShellSession

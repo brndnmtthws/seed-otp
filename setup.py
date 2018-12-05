@@ -15,7 +15,7 @@ test_requires = [
 
 setuptools.setup(
     name="seed-otp",
-    version="0.1.0",
+    version="0.1.1",
     author="Brenden Matthews",
     author_email="brenden@diddyinc.com",
     description="Python-based Bitcoin seed mnemonic one-time pad tool",
