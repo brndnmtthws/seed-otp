@@ -184,6 +184,9 @@ $ seed-otp decrypt AAwCnwGIAe0EWABWAI4AkAMjAFQBLgZjB1T1PJtz fault couple digital
       encrypt    Encrypt seed words using an OTP key.
       generate   Generate a secure OTP key for up to NUM_WORDS number of words.
 
+Command output is usually formatted as JSON, so you can pipe the output to
+other tools (such as [`jq`](https://github.com/stedolan/jq)) and get wild.
+
 ## Implementation Details
 
 ### OTP Key
