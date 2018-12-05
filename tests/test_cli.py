@@ -5,6 +5,12 @@ import seed_otp.main as main
 from click.testing import CliRunner
 
 
+def test_cli():
+    runner = CliRunner()
+    result = runner.invoke(main.cli)
+    assert result.exit_code == 0
+
+
 def test_check_key():
     runner = CliRunner()
     result = runner.invoke(

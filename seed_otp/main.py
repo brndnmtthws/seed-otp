@@ -15,7 +15,7 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 
 @click.group(context_settings=CONTEXT_SETTINGS)
 def cli():
-    pass
+    pass  # pragma: no cover
 
 
 def pj(obj):
@@ -182,7 +182,3 @@ def decrypt(otp_key, language, wordlist_file, words, include_options, detail):
             'message': '{}: {}'.format(type(e).__name__, str(e)),
         })
         sys.exit(1)
-
-
-if __name__ == '__main__':
-    cli()
