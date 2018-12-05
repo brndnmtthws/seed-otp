@@ -1,0 +1,29 @@
+sudo: false
+dist: xenial
+language: python
+python:
+  - "3.6"
+  - "3.7"
+deploy:
+  provider: pypi
+  skip_existing: true
+  user: brndnmtthws
+  password:
+    secure: EctVPQYa962mKLF+hZb+LT/6joRmPs0KdDbGhQcl2DcaXno81zfiJy812xZMyVx/dsrKzmVng4W4GEUR3clPWVeOx18lAJtvAI7T17v20/0zZOR1rfZK9lDLDZaaTGYxxyhTAIRbaD2fCGsqVR9XicK1g08nobWJa/8sa6LybG2hlTDp272gBYvmeTmm2Qy0ow3+b6VWMNgiVoqUuDx0eJddcwakyvJ+uYd6LkZ/O1lYOy2+txjZHPOU7mywI5mmniCOruCVrJYWWQE5GBipo7cAmAsSGeNWgXeSwpxGlAJQQUSkbj+O5KclaWJWobJe6HmV6MyVA7hyoR7/MGHQksxXwUbl00KDlRcDPWF5ox5sZ2FTjgBPdbFWGYqjn//kBSqxyyZSQ+mt4i9iukMkWQGrRarqfPqHcco/B4fExSuNUDQ00/hIs1potIjy5dzh8wAm7jMF9RqkU7UVlzYYmuDWDR986iOrM3i0E5zNY+8VXSZOKnzqCTbqCxrioqyLqfPTQoQvgETMqssVF8g/Ao4jwJ87VuPALsVotSl0MpWW+CWd4eDx03maW4oC2KAKIGBgl34pOM8J5JkoIC1GojbQ8Ab70tTIDhYMBx8kefAMP8/H/qJONWPy23n+4mduEAmIYCPYwS5FMf8lDeehon1Rr7pVe25IoGg4eWgv+tg=
+  on:
+    tags: true
+env:
+  global:
+    - CC_TEST_REPORTER_ID=66f327100afe76a9448090b124b0aa8f24dba11ab83981a33179167d99204b5d
+install:
+  - pip install .[test]
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+    > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - "./cc-test-reporter before-build"
+script:
+  - py.test --cov=seed_otp --cov-report xml
+after_script:
+  - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
+cache: pip
