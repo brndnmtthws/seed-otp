@@ -6,7 +6,7 @@
 mnemonic words securely using multi-factor auth.
 
 <p align="center">
-<img alt="Demo session" src="/demo.svg">
+  <img alt="Demo session" src="/demo.svg">
 </p>
 
 ## Background
