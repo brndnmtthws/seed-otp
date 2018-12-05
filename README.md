@@ -54,11 +54,12 @@ Your auth factors are:
   capture the seed mnemonic. Only use this tool if you trust the computer you
   are using.
 - The BIP-0039 mnemonic includes a checksum. After encrypting the words, the
-  checksum will break. The encrypted seed words are unlikely to be valid.
-  This may be a problem since it partially breaks the plausible deniability of
-  storing the encrypted seed words (as the encrypted mnemonic is not actually
-  a valid phrase). In later versions of this tool, it might be possible to
-  account for this problem and generate a fully compliant encrypted phrase.
+  checksum will break. Encrypted seed words are unlikely to be valid. This
+  may be a problem since it breaks the plausible deniability of storing
+  the encrypted seed words (as the encrypted mnemonic is not actually a
+  valid phrase). The disadvantages of handling the checksum gracefully is
+  that it's backward incompatible, and it would be much more difficult to
+  apply the OTP by hand using pen and paper.
 
 ### Other Solutions
 
