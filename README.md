@@ -47,7 +47,7 @@ Your auth factors are:
   and does not indicate to anyone who might find the phrase _how_ it's
   actually used.
 
-### Caveats, Limitations, Gotchas
+### Caveats, Limitations, Considerations, Gotchas
 
 - To use this tool, you need to enter the seed words into a computer. If your
   computer is compromised, someone could still use a keylogger or other tool to
@@ -60,6 +60,13 @@ Your auth factors are:
   valid phrase). The disadvantages of handling the checksum gracefully is
   that it's backward incompatible, and it would be much more difficult to
   apply the OTP by hand using pen and paper.
+- The OTP encoding (see [the "OTP key" section](#otp-key) below) does not
+  include any version/format metadata. The reason for doing this is to
+  reduce the amount of information in the key which could be used to
+  derive some other information (i.e., reduces the degree to which it is
+  [information-theoretically secure](https://en.wikipedia.org/wiki/Information-theoretic_security)).
+  The trade off, of course, is that it's difficult to modify the key format
+  and maintain backward compatibility.
 
 ### Other Solutions
 
