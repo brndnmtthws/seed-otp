@@ -11,6 +11,8 @@ rather than using a computer.
   <img alt="Demo session" src="https://brndnmtthws.github.io/seed-otp/demo.svg">
 </p>
 
+📹[I made a presentation about this tool (YouTube)](https://www.youtube.com/watch?v=N6uV5jWfXXQ)
+
 ## Background
 
 ### The Problem
