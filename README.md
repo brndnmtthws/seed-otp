@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/brndnmtthws/seed-otp.svg?branch=master)](https://travis-ci.org/brndnmtthws/seed-otp) [![Maintainability](https://api.codeclimate.com/v1/badges/679cd32dba7a27f9bb4d/maintainability)](https://codeclimate.com/github/brndnmtthws/seed-otp/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/679cd32dba7a27f9bb4d/test_coverage)](https://codeclimate.com/github/brndnmtthws/seed-otp/test_coverage) [![PyPI version](https://badge.fury.io/py/seed-otp.svg)](https://badge.fury.io/py/seed-otp)
+[![Build Status](https://travis-ci.org/brndnmtthws/seed-otp.svg?branch=master)](https://travis-ci.org/brndnmtthws/seed-otp) [![Maintainability](https://api.codeclimate.com/v1/badges/679cd32dba7a27f9bb4d/maintainability)](https://codeclimate.com/github/brndnmtthws/seed-otp/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/679cd32dba7a27f9bb4d/test_coverage)](https://codeclimate.com/github/brndnmtthws/seed-otp/test_coverage) [![PyPI version](https://badge.fury.io/py/seed-otp.svg)](https://badge.fury.io/py/seed-otp) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=brndnmtthws/seed-otp)](https://dependabot.com)
+
 
 # seed-otp
 
