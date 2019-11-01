@@ -262,9 +262,3 @@ the need to do so. This would prevent the necessity of typing your seed words
 into a computer. Naturally, you could also generate your own keys and store
 those offline as well. For practical purposes, however, this is probably
 unnecessary.
-
-## Support
-
-[![Contact Brenden 😎 on Umpyre](https://api.umpyre.com/badge/634c76f3513240a4bec1eda7fb5db7ea/badge.svg?width=211.275&height=68.04&name=Brenden%20%F0%9F%98%8E&font_size=18&style=light)](https://umpyre.com/u/634c76f3513240a4bec1eda7fb5db7ea)
-
-_Want to offer support? Add yourself above._
